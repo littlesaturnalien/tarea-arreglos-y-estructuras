@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+void arreglo2();
+
+void arreglo2(){
     float nums[6];
     nums[0]={};
     nums[1]=95.75;
@@ -19,5 +21,4 @@ int main(){
         }
         cout << " ";
     }
-    return 0;
 }

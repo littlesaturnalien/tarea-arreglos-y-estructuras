@@ -9,7 +9,7 @@ using namespace std;
 
 void estructura3();
 
-int main(){
+void estructura3(){
 
 struct datosPersonales{
     string nombre;
@@ -30,14 +30,14 @@ struct atletaOlimpico{
     system("cls");
 
     for (int i = 0; i < 5; i++){
-        cout<<"Ingrese el nombre del atleta #"<<i+1<<"."<<endl;
+        cout<<"Ingrese el nombre del atleta #"<<i+1<<":"<<endl;
         cin.ignore();
         getline(cin, Deporte[i].apartadoPersonal.nombre);
-        cout<<"Ingrese el numero de cedula."<<endl;
+        cout<<"Ingrese el numero de cedula: "<<endl;
         cin>>Deporte[i].apartadoPersonal.cedula;
-        cout<<"Ingrese el deporte en el participa el atleta."<<endl;
+        cout<<"Ingrese el deporte en el participa el atleta: "<<endl;
         cin>>Deporte[i].apartadoProfesional.deporte;
-        cout<<"Ingrese las medallas que tiene."<<endl;
+        cout<<"Ingrese las medallas que tiene: "<<endl;
         cin>>Deporte[i].apartadoProfesional.medallas;
         system("cls");
     }
@@ -51,5 +51,4 @@ struct atletaOlimpico{
         cout<<"Medallas: "<<Deporte[j].apartadoProfesional.medallas<<endl;
         cout<<endl;
     }
-    return 0;
 }

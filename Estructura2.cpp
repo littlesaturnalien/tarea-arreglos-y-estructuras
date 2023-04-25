@@ -9,6 +9,12 @@ almacenada y recuerde utilizar las funciones de E/S con el formato adecuado. */
 #include <stdlib.h>
 using namespace std;
 
+
+void estructura2();
+
+void estructura2(){
+
+
 struct estudiantesUCA{
     string nombreCompleto;
     int cif;
@@ -17,7 +23,7 @@ struct estudiantesUCA{
     int cantClases;
 };
 
-int main(){
+
     int cant;
     cout << "Cuantos estudiantes de la UCA deseas ingresar?: ";
     cin >> cant;
@@ -74,5 +80,4 @@ int main(){
         cout << "# de Semestre: " << datos[j].semestre << endl;
         cout << endl;
     }
-    return 0;
 }

@@ -7,6 +7,9 @@ adecuado. */
 #include <iostream>
 using namespace std;
 
+void estructura1();
+
+void estructura1(){
 struct Celular{
     char marca[100];
     char modelo[100];
@@ -43,9 +46,6 @@ struct Laptops{
     char disponibles[100];
 };
 
-void Estructura1();
-
-void Estructura1(){
     Celular Cel[] ={
         {"Samsung", "S21+", "679 Dolares", "Rojo", "126 GB", "06 Disponibles"},
         {"Apple", "iPhone 14 Pro", "1449 Dolares", "Blanco", "256 GB","21 Disponibles"}
