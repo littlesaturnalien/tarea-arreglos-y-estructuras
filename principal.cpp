@@ -4,6 +4,7 @@ using namespace std;
 #include <iostream>
 #include "Arreglo1.cpp"
 #include "Arreglo2.cpp"
+#include "Arreglo3.cpp"
 #include "Estructura1.cpp"
 #include "Estructura2.cpp"
 #include "Estructura3.cpp"
@@ -29,12 +30,15 @@ int main()
     cout << "Elige nuevamente: " << endl;
     cout << "Tabla de arreglos #1" << endl;
     cout << "Tabla de arreglos #2" << endl;
+    cout << "Tabla de arreglos #3" << endl;
     cin >> menuArreglos;
         switch (menuArreglos)
         {
-        case 1: arreglo1(); regresarAlMenu(); break;
+        case 1: cout << endl; arreglo1(); regresarAlMenu(); break;
         
-        case 2: arreglo2(); regresarAlMenu(); break;
+        case 2: cout << endl; arreglo2(); regresarAlMenu(); break;
+
+        case 3: cout << endl; arreglo3(); regresarAlMenu(); break;
 
         default:
             system("cls");
@@ -54,11 +58,11 @@ int main()
     cin >> menuEstructuras;
         switch (menuEstructuras)
         {
-        case 1: estructura1(); regresarAlMenu(); break;
+        case 1: cout << endl; estructura1(); regresarAlMenu(); break;
 
-        case 2: estructura2(); regresarAlMenu(); break;
+        case 2: cout << endl; estructura2(); regresarAlMenu(); break;
 
-        case 3: estructura3(); regresarAlMenu(); break;
+        case 3: cout << endl; estructura3(); regresarAlMenu(); break;
 
         default:
             system("cls");

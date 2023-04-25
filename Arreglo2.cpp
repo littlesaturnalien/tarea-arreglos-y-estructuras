@@ -21,4 +21,5 @@ void arreglo2(){
         }
         cout << " ";
     }
+    cout << endl;
 }

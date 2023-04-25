@@ -9,4 +9,5 @@ void arreglo1(){
     for(int i = 0; i < 11; i++){
         cout << vector[i] << " ";
     }
+    cout << endl;
 }
